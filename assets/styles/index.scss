@@ -1,2 +1,51 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+$blue: rgba(3, 22, 194, 0.1);
+$dark-blue: rgba(3, 5, 23, 0.8);
+$yellow: rgba(209, 207, 17, 0.05);
+$light-black: rgba(0,0,0,0.1);
+
+body {
+  filter: contrast(150%);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  background: radial-gradient(
+      circle,
+      $yellow,
+      rgba(0, 0, 0, 0.4),
+      $dark-blue
+    ), url('/assets/images/jaylivia-2.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#464646;
+
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+
+
+.hashtags {
+  padding-bottom: 15%;
+  p {
+    font-size: 4rem;
+    color: #fff;
+    line-height: 3.5rem;
+    letter-spacing: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hash {
+    font-size: 3rem;
+    margin-right: .5rem;
+  }
+}
