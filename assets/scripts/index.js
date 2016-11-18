@@ -14,7 +14,7 @@ $('#videoButton').on('click', function(e) {
 })
 
 $('#playButton').on('click', function(e) {
-
+  console.log('test')
   $(this).hide()
   $('#loading').show();
 
