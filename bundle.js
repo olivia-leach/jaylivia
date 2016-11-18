@@ -44,7 +44,7 @@ webpackJsonp([0],[
 	});
 
 	$('#playButton').on('click', function (e) {
-
+	  console.log('test');
 	  $(this).hide();
 	  $('#loading').show();
 
