@@ -6,11 +6,16 @@
 // use require without a reference to ensure a file is bundled
 require('./example');
 
+$(function() {
+  window.setTimeout(function() { $('#liv').addClass('show-me') }, 1000);
+  window.setTimeout(function() { $('#jay').addClass('show-me') }, 2000);
+});
+
 $('#videoButton').on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({
     scrollTop: $('.video').offset().top
-  }, 1000);
+  }, 500);
 })
 
 $('#playButton').on('click', function(e) {
