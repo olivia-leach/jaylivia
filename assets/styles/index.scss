@@ -79,25 +79,55 @@ section {
 }
 
 .hashtags {
+  font-size: 3rem;
   p {
-    font-size: 4rem;
     color: #fff;
     line-height: 3.5rem;
-    letter-spacing: .8rem;
     display: flex;
     align-items: center;
+    letter-spacing: .5rem;
     justify-content: center;
     opacity: 0;
     transition: 1s opacity ease-in;
+    text-shadow: 1px 1px 10px black;
+    margin-bottom: 0;
     &.show-me {
       opacity: 1;
     }
   }
   @include media(small) {
+    font-size: 4rem;
+    letter-spacing: .8rem;
     .hash {
       font-size: 3rem;
       margin-right: .5rem;
     }
+  }
+}
+
+.deets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcdcdc;
+  padding: 5rem 0;
+  p:last-of-type, a {
+    font-size: 2.5rem;
+    // color: rgb(54,179,168);
+    a:hover {
+      text-decoration: none;
+      // color: rgb(66, 214, 201);
+    }
+  }
+}
+.coming-soon {
+  font-size: 6rem;
+  font-family: 'Amatic SC';
+  margin: 0;
+  span {
+    margin: 0 1.5rem;
+    font-size: 5rem;
   }
 }
 
